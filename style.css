@@ -1,0 +1,112 @@
+/* Torti の公開サイト。アプリと同じトンマナ（docs/02-design.md）を踏襲する。 */
+
+:root {
+  --bg: #faf6f0;
+  --surface: #ffffff;
+  --accent: #2a7d6f;
+  --accent-deep: #1d5c52;
+  --text: #2b2823;
+  --text-dim: #8b8478;
+  --line: #e6ded2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171512;
+    --surface: #24211d;
+    --accent: #4ba394;
+    --accent-deep: #6bbfae;
+    --text: #f2eee7;
+    --text-dim: #9c958a;
+    --line: #34302a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.7 ui-rounded, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 22px 96px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 0 8px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 34px;
+}
+
+header.site img { width: 46px; height: 46px; }
+
+header.site a.brand {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+nav.site { margin-left: auto; display: flex; gap: 18px; flex-wrap: wrap; }
+nav.site a { color: var(--text-dim); text-decoration: none; font-size: 15px; font-weight: 500; }
+nav.site a:hover { color: var(--accent); }
+
+h1 {
+  font-size: 34px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+}
+
+h2 {
+  font-size: 21px;
+  margin: 40px 0 10px;
+  letter-spacing: -0.01em;
+}
+
+h3 { font-size: 17px; margin: 26px 0 6px; }
+
+p, li { color: var(--text); }
+li { margin-bottom: 6px; }
+
+.updated { color: var(--text-dim); font-size: 15px; margin: 0 0 30px; }
+
+.lede { font-size: 19px; color: var(--text-dim); }
+
+a { color: var(--accent); }
+
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+
+.callout {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin: 24px 0;
+}
+
+.callout p:first-child { margin-top: 0; }
+.callout p:last-child { margin-bottom: 0; }
+
+footer.site {
+  margin-top: 64px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  color: var(--text-dim);
+  font-size: 14px;
+}
+
+footer.site a { color: var(--text-dim); }
+
+code { font-size: 15px; background: var(--surface); padding: 1px 5px; border-radius: 5px; }
