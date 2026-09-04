@@ -105,6 +105,7 @@ def page(title: str, heading: str, body: str, updated: bool = True, depth: int =
   sponsored by Eli Lilly, Novo Nordisk, or any pharmaceutical company. All
   trademarks belong to their respective owners.</p>
   <p>Questions? <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></p>
+  <p>© 2026 Z, K.K. · Tokyo, Japan</p>
 </footer>
 </div>
 </body>
@@ -165,8 +166,9 @@ not medical advice — always follow the instructions your care team gave you.</
 """
 
 TERMS = """
-<p>These terms cover your use of the Torti iPhone app. Please read them before
-using the app.</p>
+<p>These terms cover your use of the Torti iPhone app, published by
+<strong>Z, K.K.</strong> (Tokyo, Japan). "We" and "us" below refer to Z, K.K.
+Please read them before using the app.</p>
 
 <h2>Torti is not medical advice</h2>
 <p>Torti is a record-keeping tool. It does not provide medical advice, diagnosis,
