@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 
 # 問い合わせ先。公開されるので、実在して本人が読めるアドレスにすること。
-SUPPORT_EMAIL = "torti.app.support@gmail.com"
+SUPPORT_EMAIL = "support.z.inc@gmail.com"
 UPDATED = "August 8, 2026"
 
 
